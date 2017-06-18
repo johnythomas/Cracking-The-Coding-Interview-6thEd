@@ -6,6 +6,9 @@ package johny.crackingthecodinginterview.chapter1;
 public class Question2 {
 
     public boolean isPermutation(String str1, String str2) {
+        if(str1.length() != str2.length()) {
+            return false;
+        }
         int[] charCount = new int[128];
         for (int index = 0; index < str1.length(); index++) {
             int charIndex = str1.charAt(index);

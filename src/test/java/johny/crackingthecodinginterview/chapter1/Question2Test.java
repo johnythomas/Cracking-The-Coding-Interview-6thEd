@@ -2,6 +2,7 @@ package johny.crackingthecodinginterview.chapter1;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class Question2Test {
@@ -15,5 +16,6 @@ public class Question2Test {
         assertTrue(q.isPermutation("good", "oogd"));
         assertTrue(q.isPermutation("f12da", "adf21"));
         assertTrue(q.isPermutation("abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()", ")(*&^%$#@!0987654321zyxwvutsrqponmlkjihgfedcba"));
+        assertFalse(q.isPermutation("abc", "ab"));
     }
 }
